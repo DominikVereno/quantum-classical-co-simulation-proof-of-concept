@@ -1,0 +1,5 @@
+*__pycache__/
+.vscode/
+venv/
+test_script*.py
+test_notebook*.ipynb

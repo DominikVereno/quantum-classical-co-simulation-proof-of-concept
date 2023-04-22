@@ -1,0 +1,8 @@
+ipykernel
+numpy
+pandas
+matplotlib 
+networkx == 2.6.3
+mosaik
+qiskit==0.41.0
+qiskit_ibm_runtime==0.9.0
