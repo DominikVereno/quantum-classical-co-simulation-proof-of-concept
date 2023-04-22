@@ -5,7 +5,7 @@ For the case stuy, we use a simple redispatch scenario. In a fictitious transmis
 We use a 3-bus and 5-bus system for our analyses. They are the same systems as those used by Sævarsson et al. 2022. The line admittances are chosen so that the eigenvalues of the B' matrix (the matrix that is actually used to solve the system of equations) can be accurately represented by only a few bits. Since we are dealing with the DC approximations of the transmission systems, only the line susceptances are given. This approach was suggested by Sævarsson et al. 2022 to eliminate this source of errors, letting us focus on other aspects.
 
 ## 3-Bus System
-![3-bus test system](Figures/3-bus_test_system.png)
+![3-bus test system](figures/3-bus_test_system.png)
 
 $$B'_{\text{3-bus}}=\begin{bmatrix}
 -1.5 & 0.5 \\
@@ -15,7 +15,7 @@ $$B'_{\text{3-bus}}=\begin{bmatrix}
 The eigenvalues of $B'_{\text{3-bus}}$ are $\{-1, -2\}$.
 
 ## 5-Bus System
-![5-bus test system](Figures/5-bus_test_system.png)
+![5-bus test system](figures/5-bus_test_system.png)
 
 $$B'_{\text{5-bus}}=\begin{bmatrix}
 -5 & 0.03 & 0 & 0 \\
