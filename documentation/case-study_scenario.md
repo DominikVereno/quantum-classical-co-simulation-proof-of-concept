@@ -2,29 +2,29 @@
 For the case stuy, we use a simple redispatch scenario. In a fictitious transmission system, we have one solar farm, one slack generator, and one or more aggregate loads (e.g. distribution systems). One transmission line is monitored to detect an overload. If an overload is detected, the output of the solar farm is throttled, and the output of the slack generator is increased. We use a DC approximation of the system..
 
 ## Power Systems
-We use a 3-bus and 5-bus system for our analyses. They are the same systems as those used by Sævarsson et al. 2022. The line admittances are chosen so that the eigenvalues of the B' matrix (the matrix that is actually used to solve the system of equations) can be accurately represented by only a few bits. Since we are dealing with the DC approximations of the transmission systems, only the line susceptances are given. This approach was suggested by Sævarsson et al. 2022 to eliminate this source of errors, letting us focus on other aspects.
+We use a 3-bus and 5-bus system for our analyses. They are the same systems as those used by Sævarsson et al. 2022. The line admittances are chosen so that the eigenvalues of the $B'$ matrix (the matrix that is actually used to solve the system of equations) can be accurately represented by only a few bits. Since we are dealing with the DC approximations of the transmission systems, only the line susceptances are given. This approach was suggested by Sævarsson et al. 2022 to eliminate this source of errors, letting us focus on other aspects.
 
 ## 3-Bus System
 ![3-bus test system](figures/3-bus_test_system.png)
 
 $$B'_{\text{3-bus}}=\begin{bmatrix}
--1.5 & 0.5 \\
-0.5 & -1.5
+1.5 & -0.5 \\
+-0.5 & 1.5
 \end{bmatrix}$$
 
-The eigenvalues of $B'_{\text{3-bus}}$ are $\{-1, -2\}$.
+The eigenvalues of $B'_{\text{3-bus}}$ are $\{1, 2\}$.
 
 ## 5-Bus System
 ![5-bus test system](figures/5-bus_test_system.png)
 
 $$B'_{\text{5-bus}}=\begin{bmatrix}
--5 & 0.03 & 0 & 0 \\
-0.03 & -3 & 0.02 & 0 \\
-0 & 0.02 & -1.55 & 0.5 \\
-0 & 0 & 0.5 & -1.45 \\
+    4 & -0.03 & 0 & 0 \\
+    -0.03 & 3 & -0.02 & 0 \\
+    0 & -0.02 & 1.55 & -0.5 \\
+    0 & 0 & -0.5 & 1.45 \\
 \end{bmatrix}$$
 
-The eigenvalues of $B'_{\text{5-bus}}$ are $\{-1, -2, -3, -4\}$.
+The eigenvalues of $B'_{\text{5-bus}}$ are $\{1, 2, 3, 4\}$.
 
 ## Simulators
 
