@@ -31,13 +31,17 @@ Refer to [Repository Contents](documentation/repository_contents.md) for detaile
 Please use the following `bib` entry when citing this work: 
 
 ```
-@article{TBD,
-    author = {Vereno, Dominik and Khodaei, Amin and Neureiter, Christian and Lehnhoff, Sebastian},
-    journal = {TBD},
-    number = {TBD},
-    pages = {TBD},
-    title = {TBD},
-    volume = {TBD,
-    year = {TBD}
+@article{Vereno2023,
+  title = {Quantum–classical co-simulation for smart grids: a proof-of-concept study on feasibility and obstacles},
+  volume = {6},
+  ISSN = {2520-8942},
+  url = {http://dx.doi.org/10.1186/s42162-023-00292-1},
+  DOI = {10.1186/s42162-023-00292-1},
+  number = {S1},
+  journal = {Energy Informatics},
+  publisher = {Springer Science and Business Media LLC},
+  author = {Vereno,  Dominik and Khodaei,  Amin and Neureiter,  Christian and Lehnhoff,  Sebastian},
+  year = {2023},
+  month = oct 
 }
 ```
